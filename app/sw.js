@@ -5,8 +5,7 @@ const staticAssets = [
   'index.html',
   'windows-3.11-calculator-styles.css',
   'windows-3.11-calculator.js',
-  'icons/icon-192x192.png',
-  'icons/icon-512x512.png'
+  'icons/icon-192x192.png'
 ];
 
 self.addEventListener('install', async event => {
