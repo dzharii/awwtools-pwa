@@ -1,0 +1,64 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pixelated MS Sans Serif', 'Arial', sans-serif;
+}
+
+body {
+  background: #008080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #c0c0c0;
+  border: 2px solid #000000;
+  padding: 8px;
+  user-select: none; /* Prevents text selection during drag */
+}
+
+.title-bar {
+  cursor: move; /* Indicates the title bar is draggable */
+  background: #000080;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.screen {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 2px;
+  font-size: 16px;
+  width: 160px;
+  height: 20px;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.button {
+  background: #c0c0c0;
+  border: 2px outset #ffffff;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button:active {
+  border-style: inset;
+}
+
